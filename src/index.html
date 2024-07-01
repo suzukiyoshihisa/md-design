@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MD DESIGN</title>
     <link href="./output.css" rel="stylesheet" />
+    <script src="./include.js"></script>
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
-    <script src="./include.js"></script>
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
       body {
         font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont,
           "Segoe UI", "Hiragino Kaku Gothic ProN", "BIZ UDPGothic", meiryo,
@@ -25,7 +28,7 @@
     </style>
   </head>
 
-  <body class="bg-gray-100 text-gray-900">
+  <body class="bg-gray-100 text-gray-900 smooth-scroll">
     <!-- Header Section -->
     <header
       class="bg-gray-800 py-4"
@@ -47,11 +50,15 @@
     </section>
 
     <!-- About Us Section -->
-    <section class="text-gray-600 py-16 bg-white body-font js-fade-in">
+    <section
+      id="about"
+      class="text-gray-600 py-16 bg-white body-font js-fade-in"
+    >
       <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold mb-8">私たちについて</h2>
         <p class="max-w-2xl mx-auto">
-          MD DESIGNは、低価格サイト更新代行、メルマガ運用、日英バイリンガルサービス、WEB制作、システム開発を提供する会社です。
+          MD
+          DESIGNは、低価格サイト更新代行、メルマガ運用、日英バイリンガルサービス、WEB制作、システム開発を提供する会社です。
         </p>
       </div>
       <div class="container px-5 py-8 mx-auto flex flex-wrap">
@@ -59,7 +66,7 @@
           <img
             alt="feature"
             class="object-cover object-center h-full w-full"
-            src="https://picsum.photos/id/180/400/500"
+            src="./image/about_image.png"
           />
         </div>
         <div
@@ -153,7 +160,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="py-16 bg-gray-100">
+    <section id="service" class="py-16 bg-gray-100 js-fade-in">
       <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold mb-8">サービス</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -164,9 +171,9 @@
               alt="blog"
             />
             <h1
-              class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
+              class="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
             >
-              Short headline.
+              ホームページ制作
             </h1>
             <p class="mx-auto text-base leading-relaxed text-gray-500">
               Free and Premium themes, UI Kit's, templates and landing pages
@@ -174,7 +181,7 @@
             </p>
             <div class="mt-4">
               <a
-                href="#"
+                href="./service-web.html"
                 class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600"
                 title="read more"
               >
@@ -189,7 +196,7 @@
               alt="blog"
             />
             <h1
-              class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
+              class="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
             >
               Short headline.
             </h1>
@@ -199,7 +206,7 @@
             </p>
             <div class="mt-4">
               <a
-                href="#"
+                href="./service-web.html"
                 class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600"
                 title="read more"
               >
@@ -214,7 +221,7 @@
               alt="blog"
             />
             <h1
-              class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
+              class="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
             >
               Short headline.
             </h1>
@@ -224,7 +231,7 @@
             </p>
             <div class="mt-4">
               <a
-                href="#"
+                href="./service-web.html"
                 class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600"
                 title="read more"
               >
@@ -241,7 +248,7 @@
               alt="blog"
             />
             <h1
-              class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
+              class="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
             >
               Short headline.
             </h1>
@@ -251,7 +258,7 @@
             </p>
             <div class="mt-4">
               <a
-                href="#"
+                href="./service-web.html"
                 class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600"
                 title="read more"
               >
@@ -266,7 +273,7 @@
               alt="blog"
             />
             <h1
-              class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
+              class="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
             >
               Short headline.
             </h1>
@@ -276,7 +283,7 @@
             </p>
             <div class="mt-4">
               <a
-                href="#"
+                href="./service-web.html"
                 class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600"
                 title="read more"
               >
@@ -291,7 +298,7 @@
               alt="blog"
             />
             <h1
-              class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
+              class="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
             >
               Short headline.
             </h1>
@@ -301,7 +308,7 @@
             </p>
             <div class="mt-4">
               <a
-                href="#"
+                href="./service-web.html"
                 class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600"
                 title="read more"
               >
@@ -343,9 +350,12 @@
     </section>
 
     <!-- News Section -->
-    <section class="py-16 bg-gray-100" style="background-image: url('https://picsum.photos/id/190/2000/1000')">
+    <section
+      class="py-16 bg-gray-100"
+      style="background-image: url('https://picsum.photos/id/190/2000/1000')"
+    >
       <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-8  text-white">ニュース</h2>
+        <h2 class="text-4xl font-bold mb-8 text-white">ニュース</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="bg-white p-8 rounded shadow">
             <h3 class="text-2xl font-bold mb-4">
@@ -362,36 +372,98 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class="py-16 bg-white">
-      <div class="container mx-auto text-center">
+    <section class="py-16 bg-white w-full">
+      <div class="container mx-auto text-center w-full">
         <h2 class="text-4xl font-bold mb-8">実績紹介</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-gray-100 p-8 rounded shadow">
-            <img
-              src="https://picsum.photos/id/181/200/100"
-              alt="Portfolio Image"
-              class="w-full mb-4"
-            />
-            <h3 class="text-2xl font-bold mb-4">プロジェクト名1</h3>
-            <p>プロジェクトの簡単な説明。</p>
+        <div
+          x-data="{
+          tabSelected: 1,
+          tabId: $id('tabs'),
+          tabButtonClicked(tabButton){
+              this.tabSelected = tabButton.id.replace(this.tabId + '-', '');
+              this.tabRepositionMarker(tabButton);
+          },
+          tabRepositionMarker(tabButton){
+              this.$refs.tabMarker.style.width = tabButton.offsetWidth + 'px';
+              this.$refs.tabMarker.style.height = tabButton.offsetHeight + 'px';
+              this.$refs.tabMarker.style.left = tabButton.offsetLeft + 'px';
+          },
+          tabContentActive(tabContent){
+              return this.tabSelected == tabContent.id.replace(this.tabId + '-content-', '');
+          },
+          tabButtonActive(tabContent){
+              const tabId = tabContent.id.split('-').slice(-1);
+              return this.tabSelected == tabId;
+          }
+      }"
+          x-init="tabRepositionMarker($refs.tabButtons.firstElementChild);"
+          class="relative w-full"
+        >
+          <div
+            x-ref="tabButtons"
+            class="relative flex items-center justify-center w-full h-16 p-1 text-gray-500 bg-white border border-gray-100 rounded-lg select-none"
+          >
+            <button
+              :id="$id(tabId)"
+              @click="tabButtonClicked($el);"
+              type="button"
+              :class="{ 'bg-gray-100 text-gray-700' : tabButtonActive($el) }"
+              class="relative z-20 flex-1 h-14 px-3 text-sm font-medium transition-all rounded-md cursor-pointer whitespace-nowrap"
+            >
+              コーポレートサイト制作
+            </button>
+            <button
+              :id="$id(tabId)"
+              @click="tabButtonClicked($el);"
+              type="button"
+              :class="{ 'bg-gray-100 text-gray-700' : tabButtonActive($el) }"
+              class="relative z-20 flex-1 h-14 px-3 text-sm font-medium transition-all rounded-md cursor-pointer whitespace-nowrap"
+            >
+              LP制作
+            </button>
+            <button
+              :id="$id(tabId)"
+              @click="tabButtonClicked($el);"
+              type="button"
+              :class="{ 'bg-gray-100 text-gray-700' : tabButtonActive($el) }"
+              class="relative z-20 flex-1 h-14 px-3 text-sm font-medium transition-all rounded-md cursor-pointer whitespace-nowrap"
+            >
+              ECサイト制作
+            </button>
+            <div
+              x-ref="tabMarker"
+              class="absolute left-0 z-10 h-full duration-300 ease-out"
+              x-cloak
+            >
+              <div class="w-full h-full bg-gray-100 rounded-md shadow-sm"></div>
+            </div>
           </div>
-          <div class="bg-gray-100 p-8 rounded shadow">
-            <img
-              src="https://picsum.photos/id/182/200/100"
-              alt="Portfolio Image"
-              class="w-full mb-4"
-            />
-            <h3 class="text-2xl font-bold mb-4">プロジェクト名2</h3>
-            <p>プロジェクトの簡単な説明。</p>
-          </div>
-          <div class="bg-gray-100 p-8 rounded shadow">
-            <img
-              src="https://picsum.photos/id/183/200/100"
-              alt="Portfolio Image"
-              class="w-full mb-4"
-            />
-            <h3 class="text-2xl font-bold mb-4">プロジェクト名3</h3>
-            <p>プロジェクトの簡単な説明。</p>
+          <div
+            class="relative flex items-center justify-center w-full p-5 mt-2 text-xs text-gray-400 border rounded-md content border-gray-200/70"
+          >
+            <div
+              :id="$id(tabId + '-content')"
+              x-show="tabContentActive($el)"
+              class="relative"
+            >
+              This is the content shown for Tab1
+            </div>
+            <div
+              :id="$id(tabId + '-content')"
+              x-show="tabContentActive($el)"
+              class="relative"
+              x-cloak
+            >
+              And, this is the content for Tab2
+            </div>
+            <div
+              :id="$id(tabId + '-content')"
+              x-show="tabContentActive($el)"
+              class="relative"
+              x-cloak
+            >
+              Finally, this is the content for Tab3
+            </div>
           </div>
         </div>
       </div>
