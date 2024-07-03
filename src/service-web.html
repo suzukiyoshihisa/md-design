@@ -1,134 +1,396 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WANSIE DESIGN</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", "Hiragino Kaku Gothic ProN", "BIZ UDPGothic", meiryo,
+          sans-serif;
+      }
+      .parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .hero {
+        height: 30vh;
+      }
+    </style>
+  </head>
 
-<body class="bg-gray-900 text-gray-100" style="scroll-behavior: smooth;">
+  <body class="bg-gray-900 text-gray-100" style="scroll-behavior: smooth">
     <!-- Header Section -->
     <header class="bg-gray-800 py-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="text-3xl font-bold">mid design</div>
-            <nav class="space-x-4">
-                <a href="#about" class="text-gray-300 hover:text-white">私たちについて</a>
-                <a href="#service" class="text-gray-300 hover:text-white">実績紹介</a>
-                <a href="#contact" class="text-gray-300 hover:text-white">お問い合わせ</a>
-            </nav>
-        </div>
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-3xl font-bold">mid design</div>
+        <nav class="space-x-4">
+          <a href="#about" class="text-gray-300 hover:text-white"
+            >私たちについて</a
+          >
+          <a href="#service" class="text-gray-300 hover:text-white">実績紹介</a>
+          <a href="#contact" class="text-gray-300 hover:text-white"
+            >お問い合わせ</a
+          >
+        </nav>
+      </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative h-screen bg-cover bg-center" style="background-image: url('path-to-your-hero-image.jpg');">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="container mx-auto h-full flex items-center justify-center">
-            <div class="text-center text-white">
-                <h1 class="text-5xl font-bold">ホームページ製作</h1>
-            </div>
+    <!-- hero Section -->
+    <section
+      class="relative parallax bg-cover bg-center hero"
+      style="background-image: url('https://picsum.photos/id/111/2000/1000')"
+    >
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="container mx-auto h-full flex items-center justify-center">
+        <div class="text-center text-white">
+          <h1 class="text-5xl font-bold">ホームページ製作</h1>
         </div>
+      </div>
     </section>
 
     <!-- About Us Section -->
     <section id="about" class="py-16 bg-gray-900">
-        <div class="container mx-auto text-center">
-            <p class="max-w-4xl mx-auto">弊社ではコストパフォーマンスの高いホームページ（PC・スマートフォンサイト）をご提供致します。制作・リニューアルだけでなく、サイト簡単な変更・現状分析、集客のご提案も可能ですので、WEB制作に関わることをワンストップで当社にお任せいただけます。</p>
-        </div>
+      <div class="container mx-auto text-center">
+        <p class="max-w-4xl mx-auto">
+          弊社ではコストパフォーマンスの高いホームページ（PC・スマートフォンサイト）をご提供致します。制作・リニューアルだけでなく、サイト簡単な変更・現状分析、集客のご提案も可能ですので、WEB制作に関わることをワンストップで当社にお任せいただけます。
+        </p>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section id="service" class="py-16 bg-gray-800">
-        <div class="container mx-auto text-center">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-gray-700 p-8 rounded">
-                    <h3 class="text-2xl font-bold mb-4">ホームページ制作</h3>
-                    <p>デザインレイアウトの制作提案、CMSの導入、運用更新支援など、オリジナルデザインの高付加価値ホームページデザインを、リーズナブルな価格でご提供します。</p>
-                </div>
-                <div class="bg-gray-700 p-8 rounded">
-                    <h3 class="text-2xl font-bold mb-4">CMS導入</h3>
-                    <p>更新の必要が出た時にすぐに行いたいとお考えのお客様に対しては、MovableType、WordpressなどのCMSプログラムを利用してサイトの構築を実施します。</p>
-                </div>
-                <div class="bg-gray-700 p-8 rounded">
-                    <h3 class="text-2xl font-bold mb-4">ECサイト</h3>
-                    <p>ネットショッピングサイトの構築を行います。ECに最適なレイアウトデザインを利用してオリジナル仕様の通販サイトを構築します。</p>
-                </div>
-                <div class="bg-gray-700 p-8 rounded">
-                    <h3 class="text-2xl font-bold mb-4">写真撮影</h3>
-                    <p>必要な写真の撮影もお任せください。商品の外観や内部の撮影など多岐にわたる写真撮影を行います。モデルやスタッフの手配も承ります。</p>
-                </div>
-                <div class="bg-gray-700 p-8 rounded">
-                    <h3 class="text-2xl font-bold mb-4">SEO・SEM対策</h3>
-                    <p>基本的なSEO対策は当社標準制作に含まれます。実施状況に応じて柔軟な、検索順位の高いSEO対策、リスティング広告の運用支援なども提供します。</p>
-                </div>
-                <div class="bg-gray-700 p-8 rounded">
-                    <h3 class="text-2xl font-bold mb-4">WEBライティング</h3>
-                    <p>コンテンツの魅力を最大限に引き出すライティングを行います。お客様のニーズに合わせた効果的なライティングを提供します。</p>
-                </div>
-            </div>
+      <div class="container mx-auto text-center">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-700 p-8 rounded">
+            <h3 class="text-2xl font-bold mb-4">ホームページ制作</h3>
+            <p>
+              デザインレイアウトの制作提案、CMSの導入、運用更新支援など、オリジナルデザインの高付加価値ホームページデザインを、リーズナブルな価格でご提供します。
+            </p>
+          </div>
+          <div class="bg-gray-700 p-8 rounded">
+            <h3 class="text-2xl font-bold mb-4">CMS導入</h3>
+            <p>
+              更新の必要が出た時にすぐに行いたいとお考えのお客様に対しては、MovableType、WordpressなどのCMSプログラムを利用してサイトの構築を実施します。
+            </p>
+          </div>
+          <div class="bg-gray-700 p-8 rounded">
+            <h3 class="text-2xl font-bold mb-4">ECサイト</h3>
+            <p>
+              ネットショッピングサイトの構築を行います。ECに最適なレイアウトデザインを利用してオリジナル仕様の通販サイトを構築します。
+            </p>
+          </div>
+          <div class="bg-gray-700 p-8 rounded">
+            <h3 class="text-2xl font-bold mb-4">写真撮影</h3>
+            <p>
+              必要な写真の撮影もお任せください。商品の外観や内部の撮影など多岐にわたる写真撮影を行います。モデルやスタッフの手配も承ります。
+            </p>
+          </div>
+          <div class="bg-gray-700 p-8 rounded">
+            <h3 class="text-2xl font-bold mb-4">SEO・SEM対策</h3>
+            <p>
+              基本的なSEO対策は当社標準制作に含まれます。実施状況に応じて柔軟な、検索順位の高いSEO対策、リスティング広告の運用支援なども提供します。
+            </p>
+          </div>
+          <div class="bg-gray-700 p-8 rounded">
+            <h3 class="text-2xl font-bold mb-4">WEBライティング</h3>
+            <p>
+              コンテンツの魅力を最大限に引き出すライティングを行います。お客様のニーズに合わせた効果的なライティングを提供します。
+            </p>
+          </div>
         </div>
+      </div>
     </section>
+
+    <!-- FAQ -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <!-- Title -->
+      <div class="max-w-2xl mx-auto">
+        <h2
+          class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white text-center"
+        >
+          FAQ
+        </h2>
+      </div>
+      <!-- End Title -->
+
+      <div
+        class="max-w-2xl mx-auto divide-y divide-gray-200 dark:divide-neutral-700"
+      >
+        <div class="py-8 first:pt-0 last:pb-0">
+          <div class="flex gap-x-5">
+            <svg
+              class="flex-shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+              <path d="M12 17h.01" />
+            </svg>
+
+            <div>
+              <h3 class="md:text-lg font-semibold text-white">
+                修正や商品追加を依頼する際、どのようなツールを使いますか？
+              </h3>
+              <p class="mt-1 text-gray-200 dark:text-neutral-500">
+                迅速かつ効率的なコミュニケーションを実現するため、当社ではチャットツールを利用しています。
+                使用するツールに関してはSlack、Chatwork、Googlechatなどお客さまの使いやすいツールを使用させていただきます。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-8 first:pt-0 last:pb-0">
+          <div class="flex gap-x-5">
+            <svg
+              class="flex-shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+              <path d="M12 17h.01" />
+            </svg>
+
+            <div>
+              <h3 class="md:text-lg font-semibold text-white">
+                修正や商品追加を依頼する際、どのようなツールを使いますか？
+              </h3>
+              <p class="mt-1 text-gray-200 dark:text-neutral-500">
+                迅速かつ効率的なコミュニケーションを実現するため、当社ではチャットツールを利用しています。
+                使用するツールに関してはSlack、Chatwork、Googlechatなどお客さまの使いやすいツールを使用させていただきます。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End FAQ -->
 
     <!-- Workflow Section -->
-    <section class="py-16 bg-gray-900">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-8">ホームページ制作の流れ</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4">目安期間</h3>
-                    <ul class="list-disc list-inside space-y-2">
-                        <li>ヒアリング・調査</li>
-                        <li>制作期間・進捗管理</li>
-                        <li>ラフデザイン・構成確定</li>
-                        <li>コーディング</li>
-                        <li>公開・納品</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold mb-4">2〜3ヶ月程</h3>
-                    <ul class="list-disc list-inside space-y-2">
-                        <li>ヒアリング：現状のサイトやご要望をお伺いします。</li>
-                        <li>制作期間：進捗管理を行いながら制作を進めます。</li>
-                        <li>ラフデザイン：お客様のご要望に沿ったデザインを提案し、確定します。</li>
-                        <li>コーディング：確定したデザインを元にサイトを構築します。</li>
-                        <li>公開：最終確認を行い、WEB公開またはバイナリデータ納品を行います。</li>
-                    </ul>
-                </div>
-            </div>
+    <section class="">
+      <div class="max-w-5xl px-4 xl:px-0 py-10 lg:pt-20 lg:pb-20 mx-auto">
+        <div class="max-w-3xl mb-10 lg:mb-14">
+          <h2 class="text-white font-semibold text-2xl md:text-4xl md:leading-tight">
+            Our approach
+          </h2>
+          <p class="mt-1 text-neutral-400">
+            ホームページ制作の流れをご紹介します。<br>
+            制作期間や料金、納品物など、お客様がホームページ制作を依頼する際の参考にしてください。
+          </p>
         </div>
+        <!-- End Title -->
+
+        <!-- Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 lg:items-center">
+          <div class="aspect-w-16 aspect-h-9 lg:aspect-none">
+            <img
+              class="w-full object-cover rounded-xl"
+              src="./image/about_image.png"
+              alt="Image Description"
+            />
+          </div>
+
+          <!-- Timeline -->
+          <div>
+            <div class="mb-4">
+              <h3 class="text-[#ff0] text-xs font-medium uppercase">
+                流れ
+              </h3>
+            </div>
+
+            <!-- Item -->
+            <div class="flex gap-x-5 ms-1">
+              <!-- Icon -->
+              <div class="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
+                <div class="relative z-10 size-8 flex justify-center items-center">
+                  <span class="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full">
+                    １
+                  </span>
+                </div>
+              </div>
+              <!-- End Icon -->
+
+              <!-- Right Content -->
+              <div class="grow pt-0.5 pb-8 sm:pb-12">
+                <p class="text-sm lg:text-base text-neutral-400">
+                  <span class="text-white">Market Research and Analysis:</span>
+                  Identify your target audience and understand their needs,
+                  preferences, and behaviors.
+                </p>
+              </div>
+              <!-- End Right Content -->
+            </div>
+            <!-- End Item -->
+
+            <!-- Item -->
+            <div class="flex gap-x-5 ms-1">
+              <!-- Icon -->
+              <div
+                class="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800"
+              >
+                <div
+                  class="relative z-10 size-8 flex justify-center items-center"
+                >
+                  <span
+                    class="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full"
+                  >
+                    2
+                  </span>
+                </div>
+              </div>
+              <!-- End Icon -->
+
+              <!-- Right Content -->
+              <div class="grow pt-0.5 pb-8 sm:pb-12">
+                <p class="text-sm lg:text-base text-neutral-400">
+                  <span class="text-white"
+                    >Product Development and Testing:</span
+                  >
+                  Develop digital products or services that address the needs
+                  and preferences of your target audience.
+                </p>
+              </div>
+              <!-- End Right Content -->
+            </div>
+            <!-- End Item -->
+
+            <!-- Item -->
+            <div class="flex gap-x-5 ms-1">
+              <!-- Icon -->
+              <div
+                class="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800"
+              >
+                <div
+                  class="relative z-10 size-8 flex justify-center items-center"
+                >
+                  <span
+                    class="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full"
+                  >
+                    3
+                  </span>
+                </div>
+              </div>
+              <!-- End Icon -->
+
+              <!-- Right Content -->
+              <div class="grow pt-0.5 pb-8 sm:pb-12">
+                <p class="text-sm md:text-base text-neutral-400">
+                  <span class="text-white">Marketing and Promotion:</span>
+                  Develop a comprehensive marketing strategy to promote your
+                  digital products or services.
+                </p>
+              </div>
+              <!-- End Right Content -->
+            </div>
+            <!-- End Item -->
+
+            <!-- Item -->
+            <div class="flex gap-x-5 ms-1">
+              <!-- Icon -->
+              <div
+                class="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800"
+              >
+                <div
+                  class="relative z-10 size-8 flex justify-center items-center"
+                >
+                  <span
+                    class="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full"
+                  >
+                    4
+                  </span>
+                </div>
+              </div>
+              <!-- End Icon -->
+
+              <!-- Right Content -->
+              <div class="grow pt-0.5 pb-8 sm:pb-12">
+                <p class="text-sm md:text-base text-neutral-400">
+                  <span class="text-white">Launch and Optimization:</span>
+                  Launch your digital products or services to the market,
+                  closely monitoring their performance and user feedback.
+                </p>
+              </div>
+              <!-- End Right Content -->
+            </div>
+            <!-- End Item -->
+
+            <a
+              class="group inline-flex items-center gap-x-2 py-2 px-3 bg-[#ff0] font-medium text-sm text-neutral-800 rounded-full focus:outline-none"
+              href="#"
+            >
+              <svg
+                class="flex-shrink-0 size-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+                <path
+                  class="opacity-0 group-hover:opacity-100 group-focus:opacity-100 group-hover:delay-100 transition"
+                  d="M14.05 2a9 9 0 0 1 8 7.94"
+                ></path>
+                <path
+                  class="opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition"
+                  d="M14.05 6A5 5 0 0 1 18 10"
+                ></path>
+              </svg>
+              Schedule a call
+            </a>
+          </div>
+          <!-- End Timeline -->
+        </div>
+        <!-- End Grid -->
+      </div>
     </section>
+    <!-- End Approach -->
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-800">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-8">お問い合わせ</h2>
-            <form class="max-w-xl mx-auto space-y-4">
-                <div>
-                    <input type="text" placeholder="お名前" class="w-full p-3 rounded bg-gray-700 text-white">
-                </div>
-                <div>
-                    <input type="email" placeholder="メールアドレス" class="w-full p-3 rounded bg-gray-700 text-white">
-                </div>
-                <div>
-                    <input type="tel" placeholder="電話番号" class="w-full p-3 rounded bg-gray-700 text-white">
-                </div>
-                <div>
-                    <textarea placeholder="お問い合わせ内容" class="w-full p-3 rounded bg-gray-700 text-white"></textarea>
-                </div>
-                <div>
-                    <button type="submit" class="w-full p-3 rounded bg-blue-500 text-white">送信</button>
-                </div>
-            </form>
-        </div>
-    </section>
+    <section
+      class="py-16 bg-gray-800"
+      include-html="include/contact.html"
+    ></section>
 
     <!-- Footer Section -->
-    <footer class="bg-gray-900 py-8">
-        <div class="container mx-auto text-center text-gray-400">
-            <p>&copy; 2024 WANSIE DESIGN. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
+    <footer
+      class="bg-gray-900 py-8"
+      include-html="include/footer.html"
+    ></footer>
 
+    <script src="include.js"></script>
+        <script src="./node_modules/preline/dist/preline.js"></script>
+  </body>
 </html>

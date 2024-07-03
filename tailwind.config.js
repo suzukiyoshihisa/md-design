@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    './src/**/*.{html,js}',
+    'node_modules/preline/dist/*.js',
+  ],
   theme: {
     extend: {
       animation: {
@@ -21,5 +24,9 @@ module.exports = {
       },
     },
   },
-  plugins: ["tailwindcss-animated"],
+  plugins: [
+    "tailwindcss-animated",
+    require('@tailwindcss/forms'),
+    require('preline/plugin'),
+  ],
 };
