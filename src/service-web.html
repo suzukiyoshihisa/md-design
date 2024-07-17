@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WANSIE DESIGN</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    <link href="./output.css" rel="stylesheet" />
     <style>
       html {
         scroll-behavior: smooth;
@@ -31,93 +28,199 @@
 
   <body class="bg-gray-900 text-gray-100" style="scroll-behavior: smooth">
     <!-- Header Section -->
-    <header class="bg-gray-800 py-4">
-      <div class="container mx-auto flex justify-between items-center">
-        <div class="text-3xl font-bold">mid design</div>
-        <nav class="space-x-4">
-          <a href="#about" class="text-gray-300 hover:text-white"
-            >私たちについて</a
-          >
-          <a href="#service" class="text-gray-300 hover:text-white">実績紹介</a>
-          <a href="#contact" class="text-gray-300 hover:text-white"
-            >お問い合わせ</a
-          >
-        </nav>
-      </div>
-    </header>
+    <header
+      class="bg-white py-4 shadow-lg"
+      include-html="include/header.html"
+      style="
+        width: 98%;
+        position: fixed;
+        left: 1%;
+        top: 10px;
+        z-index: 9999;
+        border-radius: 16px;
+        opacity: 1.8;
+        padding: 20px;
+      "
+    ></header>
 
     <!-- hero Section -->
     <section
       class="relative parallax bg-cover bg-center hero"
-      style="background-image: url('https://picsum.photos/id/111/2000/1000')"
+      style="background-image: url('https://picsum.photos/id/121/2000/1000')"
     >
-      <div class="absolute inset-0 bg-black opacity-50"></div>
       <div class="container mx-auto h-full flex items-center justify-center">
-        <div class="text-center text-white">
-          <h1 class="text-5xl font-bold">ホームページ製作</h1>
+        <div class="text-center text-gray-900">
+          <h1 class="text-5xl font-bold pt-20 z-10">ホームページ製作</h1>
         </div>
       </div>
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="py-16 bg-gray-900">
-      <div class="container mx-auto text-center">
+    <section class="py-16 bg-white text-gray-900 js-fade-in">
+      <div class="container p-6 mx-auto text-center">
         <p class="max-w-4xl mx-auto">
-          弊社ではコストパフォーマンスの高いホームページ（PC・スマートフォンサイト）をご提供致します。制作・リニューアルだけでなく、サイト簡単な変更・現状分析、集客のご提案も可能ですので、WEB制作に関わることをワンストップで当社にお任せいただけます。
+          弊社では、PCサイトやスマートフォンサイトの制作・リニューアルをはじめ、WEB制作に関わるすべてのサービスを提供しています。サイトの簡単な変更や現状分析、集客のご提案もお任せください。
+          私たちのサービスは、魅力的で効果的な文章作成からプロフェッショナルな写真撮影、検索エンジンでの上位表示を目指すSEO対策、簡単に更新・管理ができるコンテンツ管理システム（CMS）の導入、そしてオンラインショップ（ECサイトやECモール）の構築と運営サポートまで多岐にわたります。
+          弊社のワンストップサービスを利用することで、お客様のWEB制作に関わるあらゆるニーズを一括して解決していくことが可能です。WEB制作に関することはすべて私たちにお任せください。
         </p>
       </div>
     </section>
 
     <!-- Services Section -->
-    <section id="service" class="py-16 bg-gray-800">
+    <section id="service" class="py-16 bg-gray-200 js-fade-in">
       <div class="container mx-auto text-center">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-gray-700 p-8 rounded">
-            <h3 class="text-2xl font-bold mb-4">ホームページ制作</h3>
-            <p>
-              デザインレイアウトの制作提案、CMSの導入、運用更新支援など、オリジナルデザインの高付加価値ホームページデザインを、リーズナブルな価格でご提供します。
-            </p>
+          <div
+            class="max-w-lg p-4 shadow-md dark:bg-gray-50 dark:text-gray-800"
+          >
+            <div class="space-y-4">
+              <div class="space-y-2">
+                <img
+                  src="https://picsum.photos/id/124/480/360"
+                  alt=""
+                  class="block object-cover object-center w-full rounded-md h-36 dark:bg-gray-500"
+                />
+              </div>
+              <div class="space-y-2">
+                <a rel="noopener noreferrer" href="#" class="block">
+                  <h3 class="text-xl font-semibold dark:text-default-600">
+                    ホームページ制作/LP制作
+                  </h3>
+                </a>
+                <p class="leading-snug dark:text-gray-600">
+                  デザインレイアウトの制作提案、CMSの導入、運用更新支援など、オリジナルデザインの高付加価値ホームページデザインを、リーズナブルな価格でご提供します。
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="bg-gray-700 p-8 rounded">
-            <h3 class="text-2xl font-bold mb-4">CMS導入</h3>
-            <p>
-              更新の必要が出た時にすぐに行いたいとお考えのお客様に対しては、MovableType、WordpressなどのCMSプログラムを利用してサイトの構築を実施します。
-            </p>
+          <div
+            class="max-w-lg p-4 shadow-md dark:bg-gray-50 dark:text-gray-800"
+          >
+            <div class="space-y-4">
+              <div class="space-y-2">
+                <img
+                  src="https://picsum.photos/id/122/480/360"
+                  alt=""
+                  class="block object-cover object-center w-full rounded-md h-36 dark:bg-gray-500"
+                />
+              </div>
+              <div class="space-y-2">
+                <a rel="noopener noreferrer" href="#" class="block">
+                  <h3 class="text-xl font-semibold dark:text-default-600">
+                    CMS導入
+                  </h3>
+                </a>
+                <p class="leading-snug dark:text-gray-600">
+                  更新の必要が出た時にすぐに行いたいとお考えのお客様に対しては、MovableType、WordpressなどのCMSプログラムを利用してサイトの構築を実施します。
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="bg-gray-700 p-8 rounded">
-            <h3 class="text-2xl font-bold mb-4">ECサイト</h3>
-            <p>
-              ネットショッピングサイトの構築を行います。ECに最適なレイアウトデザインを利用してオリジナル仕様の通販サイトを構築します。
-            </p>
+          <div
+            class="max-w-lg p-4 shadow-md dark:bg-gray-50 dark:text-gray-800"
+          >
+            <div class="space-y-4">
+              <div class="space-y-2">
+                <img
+                  src="https://picsum.photos/id/125/480/360"
+                  alt=""
+                  class="block object-cover object-center w-full rounded-md h-36 dark:bg-gray-500"
+                />
+              </div>
+              <div class="space-y-2">
+                <a rel="noopener noreferrer" href="#" class="block">
+                  <h3 class="text-xl font-semibold dark:text-default-600">
+                    オリジナルイラスト
+                  </h3>
+                </a>
+                <p class="leading-snug dark:text-gray-600">
+                  サイトや販促物のテイストに合わせたオリジナルイラストの制作を行います
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="bg-gray-700 p-8 rounded">
-            <h3 class="text-2xl font-bold mb-4">写真撮影</h3>
-            <p>
-              必要な写真の撮影もお任せください。商品の外観や内部の撮影など多岐にわたる写真撮影を行います。モデルやスタッフの手配も承ります。
-            </p>
+
+          <div
+            class="max-w-lg p-4 shadow-md dark:bg-gray-50 dark:text-gray-800"
+          >
+            <div class="space-y-4">
+              <div class="space-y-2">
+                <img
+                  src="https://picsum.photos/id/112/480/360"
+                  alt=""
+                  class="block object-cover object-center w-full rounded-md h-36 dark:bg-gray-500"
+                />
+              </div>
+              <div class="space-y-2">
+                <a rel="noopener noreferrer" href="#" class="block">
+                  <h3 class="text-xl font-semibold dark:text-default-600">
+                    SEO・SEM対策
+                  </h3>
+                </a>
+                <p class="leading-snug dark:text-gray-600">
+                  基本的なSEO対策は当社標準制作に含まれます。実施状況に応じて柔軟な、検索順位の高いSEO対策、リスティング広告の運用支援なども提供します。
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="bg-gray-700 p-8 rounded">
-            <h3 class="text-2xl font-bold mb-4">SEO・SEM対策</h3>
-            <p>
-              基本的なSEO対策は当社標準制作に含まれます。実施状況に応じて柔軟な、検索順位の高いSEO対策、リスティング広告の運用支援なども提供します。
-            </p>
+          <div
+            class="max-w-lg p-4 shadow-md dark:bg-gray-50 dark:text-gray-800"
+          >
+            <div class="space-y-4">
+              <div class="space-y-2">
+                <img
+                  src="https://picsum.photos/id/114/480/360"
+                  alt=""
+                  class="block object-cover object-center w-full rounded-md h-36 dark:bg-gray-500"
+                />
+              </div>
+              <div class="space-y-2">
+                <a rel="noopener noreferrer" href="#" class="block">
+                  <h3 class="text-xl font-semibold dark:text-default-600">
+                    写真撮影
+                  </h3>
+                </a>
+                <p class="leading-snug dark:text-gray-600">
+                  必要な写真の撮影もお任せください。商品の外観や内部の撮影など多岐にわたる写真撮影を行います。モデルやスタッフの手配も承ります。
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="bg-gray-700 p-8 rounded">
-            <h3 class="text-2xl font-bold mb-4">WEBライティング</h3>
-            <p>
-              コンテンツの魅力を最大限に引き出すライティングを行います。お客様のニーズに合わせた効果的なライティングを提供します。
-            </p>
+          <div
+            class="max-w-lg p-4 shadow-md dark:bg-gray-50 dark:text-gray-800"
+          >
+            <div class="space-y-4">
+              <div class="space-y-2">
+                <img
+                  src="https://picsum.photos/id/142/480/360"
+                  alt=""
+                  class="block object-cover object-center w-full rounded-md h-36 dark:bg-gray-500"
+                />
+              </div>
+              <div class="space-y-2">
+                <a rel="noopener noreferrer" href="#" class="block">
+                  <h3 class="text-xl font-semibold dark:text-default-600">
+                    WEBライティング
+                  </h3>
+                </a>
+                <p class="leading-snug dark:text-gray-600">
+                  コンテンツの魅力を最大限に引き出すライティングを行います。お客様のニーズに合わせた効果的なライティングを提供します。
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div
+      class="px-4 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-white text-gray-900 js-fade-in"
+    >
       <!-- Title -->
       <div class="max-w-2xl mx-auto">
         <h2
-          class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white text-center"
+          class="text-2xl font-bold md:text-4xl md:leading-tight text-gray-900 mb-8 text-center"
         >
           FAQ
         </h2>
@@ -147,7 +250,38 @@
             </svg>
 
             <div>
-              <h3 class="md:text-lg font-semibold text-white">
+              <h3 class="md:text-xl font-semibold text-gray-900">
+                制作期間はどれくらいかかりますか？
+              </h3>
+              <p class="mt-1 text-gray-200 dark:text-neutral-500">
+                制作期間はプロジェクトの規模や複雑さによりますが、通常は6〜12週間程度です。
+                初期の要件定義やデザインの確認、フィードバックのタイミングなども影響しますので、具体的なスケジュールはお打ち合わせの際にご相談させていただきます。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-8 first:pt-0 last:pb-0">
+          <div class="flex gap-x-5">
+            <svg
+              class="flex-shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+              <path d="M12 17h.01" />
+            </svg>
+
+            <div>
+              <h3 class="md:text-xl font-semibold text-gray-900">
                 修正や商品追加を依頼する際、どのようなツールを使いますか？
               </h3>
               <p class="mt-1 text-gray-200 dark:text-neutral-500">
@@ -178,12 +312,42 @@
             </svg>
 
             <div>
-              <h3 class="md:text-lg font-semibold text-white">
-                修正や商品追加を依頼する際、どのようなツールを使いますか？
+              <h3 class="md:text-xl font-semibold text-gray-900">
+                ドメインやサーバーの手配はどうすればいいですか？
               </h3>
               <p class="mt-1 text-gray-200 dark:text-neutral-500">
-                迅速かつ効率的なコミュニケーションを実現するため、当社ではチャットツールを利用しています。
-                使用するツールに関してはSlack、Chatwork、Googlechatなどお客さまの使いやすいツールを使用させていただきます。
+                ドメインやサーバーの手配もお任せいただけます。既にお持ちのドメインやサーバーを利用することも可能ですし、必要に応じて最適なプランをご提案させていただきます。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-8 first:pt-0 last:pb-0">
+          <div class="flex gap-x-5">
+            <svg
+              class="flex-shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+              <path d="M12 17h.01" />
+            </svg>
+
+            <div>
+              <h3 class="md:text-xl font-semibold text-gray-900">
+                制作過程での修正回数に制限はありますか？
+              </h3>
+              <p class="mt-1 text-gray-200 dark:text-neutral-500">
+                基本的には2回までの修正が含まれておりますが、それ以上の修正が必要な場合は、追加料金が発生することがあります。詳細はご契約の際にご説明いたします。
+                これらの回答をもとに、クライアントの質問に迅速かつ的確に対応することができます。
               </p>
             </div>
           </div>
@@ -193,194 +357,222 @@
     <!-- End FAQ -->
 
     <!-- Workflow Section -->
-    <section class="">
-      <div class="max-w-5xl px-4 xl:px-0 py-10 lg:pt-20 lg:pb-20 mx-auto">
-        <div class="max-w-3xl mb-10 lg:mb-14">
-          <h2 class="text-white font-semibold text-2xl md:text-4xl md:leading-tight">
-            Our approach
-          </h2>
-          <p class="mt-1 text-neutral-400">
-            ホームページ制作の流れをご紹介します。<br>
-            制作期間や料金、納品物など、お客様がホームページ制作を依頼する際の参考にしてください。
-          </p>
-        </div>
-        <!-- End Title -->
-
-        <!-- Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 lg:items-center">
-          <div class="aspect-w-16 aspect-h-9 lg:aspect-none">
-            <img
-              class="w-full object-cover rounded-xl"
-              src="./image/about_image.png"
-              alt="Image Description"
-            />
-          </div>
-
-          <!-- Timeline -->
-          <div>
-            <div class="mb-4">
-              <h3 class="text-[#ff0] text-xs font-medium uppercase">
-                流れ
-              </h3>
-            </div>
-
-            <!-- Item -->
-            <div class="flex gap-x-5 ms-1">
-              <!-- Icon -->
-              <div class="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
-                <div class="relative z-10 size-8 flex justify-center items-center">
-                  <span class="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full">
-                    １
-                  </span>
-                </div>
-              </div>
-              <!-- End Icon -->
-
-              <!-- Right Content -->
-              <div class="grow pt-0.5 pb-8 sm:pb-12">
-                <p class="text-sm lg:text-base text-neutral-400">
-                  <span class="text-white">Market Research and Analysis:</span>
-                  Identify your target audience and understand their needs,
-                  preferences, and behaviors.
-                </p>
-              </div>
-              <!-- End Right Content -->
-            </div>
-            <!-- End Item -->
-
-            <!-- Item -->
-            <div class="flex gap-x-5 ms-1">
-              <!-- Icon -->
-              <div
-                class="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800"
-              >
-                <div
-                  class="relative z-10 size-8 flex justify-center items-center"
-                >
-                  <span
-                    class="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full"
-                  >
-                    2
-                  </span>
-                </div>
-              </div>
-              <!-- End Icon -->
-
-              <!-- Right Content -->
-              <div class="grow pt-0.5 pb-8 sm:pb-12">
-                <p class="text-sm lg:text-base text-neutral-400">
-                  <span class="text-white"
-                    >Product Development and Testing:</span
-                  >
-                  Develop digital products or services that address the needs
-                  and preferences of your target audience.
-                </p>
-              </div>
-              <!-- End Right Content -->
-            </div>
-            <!-- End Item -->
-
-            <!-- Item -->
-            <div class="flex gap-x-5 ms-1">
-              <!-- Icon -->
-              <div
-                class="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800"
-              >
-                <div
-                  class="relative z-10 size-8 flex justify-center items-center"
-                >
-                  <span
-                    class="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full"
-                  >
-                    3
-                  </span>
-                </div>
-              </div>
-              <!-- End Icon -->
-
-              <!-- Right Content -->
-              <div class="grow pt-0.5 pb-8 sm:pb-12">
-                <p class="text-sm md:text-base text-neutral-400">
-                  <span class="text-white">Marketing and Promotion:</span>
-                  Develop a comprehensive marketing strategy to promote your
-                  digital products or services.
-                </p>
-              </div>
-              <!-- End Right Content -->
-            </div>
-            <!-- End Item -->
-
-            <!-- Item -->
-            <div class="flex gap-x-5 ms-1">
-              <!-- Icon -->
-              <div
-                class="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800"
-              >
-                <div
-                  class="relative z-10 size-8 flex justify-center items-center"
-                >
-                  <span
-                    class="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full"
-                  >
-                    4
-                  </span>
-                </div>
-              </div>
-              <!-- End Icon -->
-
-              <!-- Right Content -->
-              <div class="grow pt-0.5 pb-8 sm:pb-12">
-                <p class="text-sm md:text-base text-neutral-400">
-                  <span class="text-white">Launch and Optimization:</span>
-                  Launch your digital products or services to the market,
-                  closely monitoring their performance and user feedback.
-                </p>
-              </div>
-              <!-- End Right Content -->
-            </div>
-            <!-- End Item -->
-
-            <a
-              class="group inline-flex items-center gap-x-2 py-2 px-3 bg-[#ff0] font-medium text-sm text-neutral-800 rounded-full focus:outline-none"
-              href="#"
+    <section class="dark:bg-gray-100 dark:text-gray-800">
+      <div class="container mx-auto flex flex-col p-6">
+        <h2 class="py-4 text-3xl font-bold text-center">
+          ホームページ制作の流れ
+        </h2>
+        <p class="py-4 text-xl font-bold text-center">
+          目安期間は2〜3ヶ月です。
+        </p>
+        <div class="divide-y dark:divide-gray-300">
+          <div
+            class="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0"
+          >
+            <div
+              class="flex items-center justify-center lg:col-span-1 col-span-full"
             >
               <svg
-                class="flex-shrink-0 size-4"
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                viewBox="0 0 512 512"
+                fill="currentColor"
+                class="w-16 h-16"
+              >
+                <path
+                  d="M472,16H168a24,24,0,0,0-24,24V344a24,24,0,0,0,24,24H472a24,24,0,0,0,24-24V40A24,24,0,0,0,472,16Zm-8,320H176V48H464Z"
+                ></path>
+                <path d="M112,400V80H80V408a24,24,0,0,0,24,24H432V400Z"></path>
+                <path d="M48,464V144H16V472a24,24,0,0,0,24,24H368V464Z"></path>
+              </svg>
+            </div>
+            <div
+              class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left"
+            >
+              <span
+                class="text-xs tracking-wider uppercase dark:text-violet-600"
+                >Step 1 - Nihil</span
+              >
+              <span class="text-xl font-bold md:text-2xl"
+                >ヒアリング・調査</span
+              >
+              <span class="mt-4 dark:text-gray-700"
+                >現状のサイトやご要望をお伺いします。</span
+              >
+            </div>
+          </div>
+          <div
+            class="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0"
+          >
+            <div
+              class="flex items-center justify-center lg:col-span-1 col-span-full"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                fill="currentColor"
+                class="w-16 h-16"
+              >
+                <path
+                  d="M285.177,179l15.513-3.914-7.827-31.028-15.514,3.913a176.937,176.937,0,0,0-129.3,133.557l-3.407,15.633,31.266,6.814,3.406-15.634A145.559,145.559,0,0,1,285.177,179Z"
+                ></path>
+                <path
+                  d="M363.624,147.871C343.733,72.077,274.643,16,192.7,16,95.266,16,16,95.266,16,192.7c0,82.617,57,152.163,133.735,171.4A176.769,176.769,0,0,0,320.7,496c97.431,0,176.7-79.266,176.7-176.695C497.392,238.071,441.64,167.336,363.624,147.871ZM48,192.7C48,112.91,112.91,48,192.7,48s144.7,64.91,144.7,144.7-64.911,144.7-144.7,144.7S48,272.481,48,192.7ZM320.7,464c-60.931,0-115.21-38.854-135.843-94.792,2.6.115,5.214.184,7.843.184a176.862,176.862,0,0,0,32.7-3.047l97.625,97.625C322.247,463.983,321.473,464,320.7,464Zm41.528-6.083L260.26,355.954a176.9,176.9,0,0,0,43.662-26.072L408.37,434.33A144.385,144.385,0,0,1,362.223,457.917Zm69.3-45.692L326.851,307.557a177.082,177.082,0,0,0,27.911-44.5L457.67,365.964A144.661,144.661,0,0,1,431.519,412.225Zm33.594-84.073-99.42-99.42a176.785,176.785,0,0,0,3.7-36.036c0-3.285-.1-6.547-.276-9.787a145.054,145.054,0,0,1,96.276,136.4C465.392,322.276,465.291,325.224,465.113,328.152Z"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left"
+            >
+              <span
+                class="text-xs tracking-wider uppercase dark:text-violet-600"
+                >Step 2 - Explicabo</span
+              >
+              <span class="text-xl font-bold md:text-2xl"
+                >制作期間・進捗管理</span
+              >
+              <span class="mt-4 dark:text-gray-700"
+                >制作期間：進捗管理を行いながら制作を進めます。</span
+              >
+            </div>
+          </div>
+          <div
+            class="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0"
+          >
+            <div
+              class="flex items-center justify-center lg:col-span-1 col-span-full"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                fill="currentColor"
+                class="w-16 h-16"
+              >
+                <path
+                  d="M412.284,294.37l-12.5,15.642c-8.354,10.454-50.027,64.208-50.027,95.883,0,36.451,28.049,66.105,62.526,66.105s62.527-29.654,62.527-66.105c0-31.675-41.673-85.429-50.028-95.883Zm0,145.63c-16.832,0-30.526-15.3-30.526-34.105,0-11.662,15.485-37.883,30.531-59.2,15.043,21.3,30.522,47.509,30.522,59.2C442.811,424.7,429.116,440,412.284,440Z"
+                ></path>
+                <path
+                  d="M122.669,51.492,96.133,124.4,30.092,97.205,17.908,126.8l67.271,27.7L26.9,314.606a48.056,48.056,0,0,0,28.689,61.523l184.719,67.232a48,48,0,0,0,61.523-28.688L397.6,151.56Zm149.1,352.236a16,16,0,0,1-20.508,9.563L66.537,346.059a16,16,0,0,1-9.563-20.507L73.553,280H316.8ZM85.2,248l29.594-81.311,36.333,14.961a32.644,32.644,0,1,0,11.236-29.98l-36.615-15.077,16.046-44.085,214.79,78.177L328,249.219V248Z"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left"
+            >
+              <span
+                class="text-xs tracking-wider uppercase dark:text-violet-600"
+                >Step 3 - Facilis</span
+              >
+              <span class="text-xl font-bold md:text-2xl"
+                >ラフデザイン・構成確定</span
+              >
+              <span class="mt-4 dark:bg-gray-100 dark:text-gray-700"
+                >ラフデザイン：お客様のご要望に沿ったデザインを提案し、確定します。
+              </span>
+            </div>
+          </div>
+          <div
+            class="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0"
+          >
+            <div
+              class="flex items-center justify-center lg:col-span-1 col-span-full"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                fill="currentColor"
+                class="w-16 h-16"
+              >
+                <polygon
+                  points="388.632 393.82 495.823 255.94 388.684 118.178 363.424 137.822 455.288 255.944 363.368 374.18 388.632 393.82"
+                ></polygon>
+                <polygon
+                  points="148.579 374.181 56.712 255.999 148.629 137.823 123.371 118.177 16.177 255.993 123.314 393.819 148.579 374.181"
+                ></polygon>
+                <polygon
+                  points="330.529 16 297.559 16 178.441 496 211.412 496 330.529 16"
+                ></polygon>
+              </svg>
+            </div>
+            <div
+              class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left"
+            >
+              <span
+                class="text-xs tracking-wider uppercase dark:text-violet-600"
+                >Step 4 - Aperiam</span
+              >
+              <span class="text-xl font-bold md:text-2xl">コーディング</span>
+              <span class="mt-4 dark:text-gray-700"
+                >コーディング：確定したデザインを元にサイトを構築します。</span
+              >
+            </div>
+          </div>
+          <div
+            class="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0"
+          >
+            <div
+              class="flex items-center justify-center lg:col-span-1 col-span-full"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
+                class="w-16 h-16"
               >
-                <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                ></path>
-                <path
-                  class="opacity-0 group-hover:opacity-100 group-focus:opacity-100 group-hover:delay-100 transition"
-                  d="M14.05 2a9 9 0 0 1 8 7.94"
-                ></path>
-                <path
-                  class="opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition"
-                  d="M14.05 6A5 5 0 0 1 18 10"
-                ></path>
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M11.933 5h-6.933v16h13v-8" />
+                <path d="M14 17h-5" />
+                <path d="M9 13h5v-4h-5z" />
+                <path d="M15 5v-2" />
+                <path d="M18 6l2 -2" />
+                <path d="M19 9h2" />
               </svg>
-              Schedule a call
-            </a>
+            </div>
+            <div class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
+              <span
+                class="text-xs tracking-wider uppercase dark:text-violet-600"
+                >Step 5 - Aperiam</span>
+              <span class="text-xl font-bold md:text-2xl">公開・納品</span>
+              <span class="mt-4 dark:text-gray-700"
+                >公開:最終確認を行い、WEB公開またはバイナリデータ納品を行います。</span
+              >
+            </div>
           </div>
-          <!-- End Timeline -->
         </div>
-        <!-- End Grid -->
       </div>
     </section>
-    <!-- End Approach -->
+
+    <!-- Logos -->
+    <section class="bg-white text-gray-800">
+      <div class="container p-6 mx-auto space-y-6 text-center lg:p-16 lg:space-y-16">
+        <h2 class="text-3xl font-bold">制作可能実績</h2>
+        <div class="flex flex-wrap justify-center lg:justify-between">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Angular" class="w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-600">
+            <title>Angular</title>
+            <path d="M13.24 16.859h5.51l-2.755-6.542zM15.995 0.010l-15.078 5.307 2.297 19.677 12.781 6.995 12.786-6.984 2.297-19.688-15.083-5.302zM25.406 24.406h-3.516l-1.896-4.667h-8l-1.896 4.667h-3.516l9.411-20.865z"></path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Gatsby" class="w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-600">
+            <title>Gatsby</title>
+            <path d="M16 0.011c-8.901 0-15.989 7.088-15.989 15.989s7.088 15.995 15.989 15.995c8.901 0 15.989-7.093 15.989-15.995s-7.088-15.989-15.989-15.989zM3.484 16.14l12.38 12.376c-6.817 0-12.38-5.563-12.38-12.376zM18.781 28.24l-15.016-15.021c1.251-5.563 6.256-9.735 12.235-9.735 4.011 0.011 7.776 1.917 10.151 5.147l-1.807 1.531c-1.912-2.801-5.089-4.468-8.48-4.453-4.333-0.025-8.197 2.719-9.599 6.819l13.073 13.072c3.197-1.115 5.703-3.896 6.396-7.235h-5.423v-2.364h8.204c0 5.979-4.172 10.989-9.735 12.24z"></path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Plain HTML" class="w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-600">
+            <title>Plain HTML</title>
+            <path d="M2 0h28l-2.547 28.75-11.484 3.25-11.417-3.25zM11.375 13l-0.307-3.625 13.411 0.005 0.307-3.495-17.573-0.005 0.932 10.682h12.167l-0.432 4.568-3.88 1.068-3.938-1.078-0.255-2.813h-3.479l0.443 5.563 7.229 1.932 7.172-1.927 0.99-10.875z"></path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Next.js" class="w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-600">
+            <title>Next.js</title>
+            <path d="M23.749 30.005c-0.119 0.063-0.109 0.083 0.005 0.025 0.037-0.015 0.068-0.036 0.095-0.061 0-0.021 0-0.021-0.1 0.036zM23.989 29.875c-0.057 0.047-0.057 0.047 0.011 0.016 0.036-0.021 0.068-0.041 0.068-0.047 0-0.027-0.016-0.021-0.079 0.031zM24.145 29.781c-0.057 0.047-0.057 0.047 0.011 0.016 0.037-0.021 0.068-0.043 0.068-0.048 0-0.025-0.016-0.020-0.079 0.032zM24.303 29.688c-0.057 0.047-0.057 0.047 0.009 0.015 0.037-0.020 0.068-0.041 0.068-0.047 0-0.025-0.016-0.020-0.077 0.032zM24.516 29.547c-0.109 0.073-0.147 0.12-0.047 0.068 0.067-0.041 0.181-0.131 0.161-0.131-0.043 0.016-0.079 0.043-0.115 0.063zM14.953 0.011c-0.073 0.005-0.292 0.025-0.484 0.041-4.548 0.412-8.803 2.86-11.5 6.631-1.491 2.067-2.459 4.468-2.824 6.989-0.129 0.88-0.145 1.14-0.145 2.333 0 1.192 0.016 1.448 0.145 2.328 0.871 6.011 5.147 11.057 10.943 12.927 1.043 0.333 2.136 0.563 3.381 0.704 0.484 0.052 2.577 0.052 3.061 0 2.152-0.24 3.969-0.771 5.767-1.688 0.276-0.14 0.328-0.177 0.291-0.208-0.88-1.161-1.744-2.323-2.609-3.495l-2.557-3.453-3.203-4.745c-1.068-1.588-2.14-3.172-3.229-4.744-0.011 0-0.025 2.109-0.031 4.681-0.011 4.505-0.011 4.688-0.068 4.792-0.057 0.125-0.151 0.229-0.276 0.287-0.099 0.047-0.188 0.057-0.661 0.057h-0.541l-0.141-0.088c-0.088-0.057-0.161-0.136-0.208-0.229l-0.068-0.141 0.005-6.271 0.011-6.271 0.099-0.125c0.063-0.077 0.141-0.14 0.229-0.187 0.131-0.063 0.183-0.073 0.724-0.073 0.635 0 0.74 0.025 0.907 0.208 1.296 1.932 2.588 3.869 3.859 5.812 2.079 3.152 4.917 7.453 6.312 9.563l2.537 3.839 0.125-0.083c1.219-0.813 2.328-1.781 3.285-2.885 2.016-2.308 3.324-5.147 3.767-8.177 0.129-0.88 0.145-1.141 0.145-2.333 0-1.193-0.016-1.448-0.145-2.328-0.871-6.011-5.147-11.057-10.943-12.928-1.084-0.343-2.199-0.577-3.328-0.697-0.303-0.031-2.371-0.068-2.631-0.041zM21.5 9.688c0.151 0.072 0.265 0.208 0.317 0.364 0.027 0.084 0.032 1.823 0.027 5.74l-0.011 5.624-0.989-1.52-0.995-1.521v-4.083c0-2.647 0.011-4.131 0.025-4.204 0.047-0.167 0.161-0.307 0.313-0.395 0.124-0.063 0.172-0.068 0.667-0.068 0.463 0 0.541 0.005 0.645 0.063z"></path>
+          </svg>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact Section -->
     <section
-      class="py-16 bg-gray-800"
+      class="py-16 bg-gray-500"
       include-html="include/contact.html"
     ></section>
 
@@ -391,6 +583,6 @@
     ></footer>
 
     <script src="include.js"></script>
-        <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="./node_modules/preline/dist/preline.js"></script>
   </body>
 </html>

@@ -32,8 +32,18 @@
   <body class="bg-gray-100 text-gray-900 smooth-scroll">
     <!-- Header Section -->
     <header
-      class="bg-gray-800 py-4"
+      class="bg-white py-4 shadow-lg"
       include-html="include/header.html"
+      style="
+        width: 98%;
+        position: fixed;
+        left: 1%;
+        top: 10px;
+        z-index: 9999;
+        border-radius: 16px;
+        opacity: 1.8;
+        padding: 20px;
+      "
     ></header>
 
     <!-- Hero Section -->
@@ -45,7 +55,7 @@
       <div class="container mx-auto h-full flex items-center justify-center">
         <div class="text-center text-white js-fade-in">
           <h1 class="text-5xl font-bold">WEB DESIGN</h1>
-          <p class="mt-4">素晴らしいデザインを提供します</p>
+          <p class="mt-4">あなたらしさを伝える、伝わるデザインに</p>
         </div>
       </div>
     </section>
@@ -55,7 +65,7 @@
       id="about"
       class="text-gray-600 py-16 bg-white body-font js-fade-in"
     >
-      <div class="container mx-auto text-center">
+      <div class="container px-5 mx-auto text-center">
         <h2 class="text-4xl font-bold mb-8">私たちについて</h2>
         <p class="max-w-2xl mx-auto text-left mb-16">
           私たちは、WEBサイトやECサイトの制作や運営をサポートする会社です。
@@ -86,8 +96,7 @@
                 国内外のクリエイティブがワンストップ
               </h2>
               <p class="leading-relaxed text-base">
-                Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                taxidermy. Gastropub indxgo juice poutine.
+                国内のみならず海外にもリーチできる多言語サイト、パンフレットやチラシを制作。翻訳・ライティング・デザインまで一括マネジメントが可能です。
               </p>
             </div>
           </div>
@@ -97,8 +106,7 @@
                 低価格でのサイト更新代行・運用
               </h2>
               <p class="leading-relaxed text-base">
-                Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                taxidermy. Gastropub indxgo juice poutine.
+                定期・不定期のサイト更新・保守、ECサイトの運用を任せたいなど、外注して社内コストを削減したいと考えるお客様のビジネスをサポートします。
               </p>
             </div>
           </div>
@@ -108,8 +116,7 @@
                 プロフェッショナルな専門チームによる安心感
               </h2>
               <p class="leading-relaxed text-base">
-                Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                taxidermy. Gastropub indxgo juice poutine.
+                それぞれの事業体が法人化した高いレベルで事業運営しており、各分野に特化したノウハウやネットワーク網を持ち合わせております。そのノウハウを集結・連携させ、ワンストップでのサービス提供をすることで、品質やコスト等、様々な面で最適なソリューションを提供することができます。
               </p>
             </div>
           </div>
@@ -119,8 +126,7 @@
                 日・英バイリンガルでのサービス対応
               </h2>
               <p class="leading-relaxed text-base">
-                Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                taxidermy. Gastropub indxgo juice poutine.
+                弊社ではグローバル企業の日本進出を積極的にサポートしております。日英バイリンガルの専任のコーディネーターが担当しますので、全ての業務に関して日本語・英語でのサービス提供が可能です。
               </p>
             </div>
           </div>
@@ -130,25 +136,24 @@
 
     <!-- Services Section -->
     <section id="service" class="py-16 bg-gray-100 js-fade-in">
-      <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-8">サービス</h2>
+      <div class="container mx-auto">
+        <h2 class="text-center text-4xl font-bold mb-8">サービス</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div class="p-8">
             <img
-              class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-              src="https://picsum.photos/seed/picsum/200/300"
+              class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-md"
+              src="https://picsum.photos/id/165/200/300"
               alt="blog"
             />
             <h1
-              class="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
+              class="text-center mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
             >
-              ホームページ制作
+              ホームページ / LP制作
             </h1>
             <p class="mx-auto text-base leading-relaxed text-gray-500">
-              Free and Premium themes, UI Kit's, templates and landing pages
-              built with Tailwind CSS, HTML &amp; Next.js.
+              高品質で使いやすいホームページを制作し、企業の魅力を最大限に伝えます。お客様の要望に応じたデザインと機能を実現します。
             </p>
-            <div class="mt-4">
+            <div class="text-center">
               <a
                 href="./service-web.html"
                 class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600"
@@ -160,20 +165,19 @@
           </div>
           <div class="p-8">
             <img
-              class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-              src="https://picsum.photos/seed/picsum/200/300"
+              class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-md"
+              src="https://picsum.photos/id/170/200/300"
               alt="blog"
             />
             <h1
-              class="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
+              class="text-center mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
             >
-              ECサイト制作
+              ECサイト
             </h1>
             <p class="mx-auto text-base leading-relaxed text-gray-500">
-              Free and Premium themes, UI Kit's, templates and landing pages
-              built with Tailwind CSS, HTML &amp; Next.js.
+              オンラインショップの構築から運営までをトータルサポート。売上向上を目指し、効果的なECサイトの運営を支援します。
             </p>
-            <div class="mt-4">
+            <div class="text-center">
               <a
                 href="./service-web.html"
                 class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600"
@@ -185,20 +189,19 @@
           </div>
           <div class="p-8">
             <img
-              class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-              src="https://picsum.photos/seed/picsum/200/300"
+              class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-md"
+              src="https://picsum.photos/id/101/200/300"
               alt="blog"
             />
             <h1
-              class="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
+              class="text-center mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
             >
-              グラフィック制作
+              ロゴ制作 / ブランディング
             </h1>
             <p class="mx-auto text-base leading-relaxed text-gray-500">
-              Free and Premium themes, UI Kit's, templates and landing pages
-              built with Tailwind CSS, HTML &amp; Next.js.
+              会社の顔となるロゴ、バナー、チラシなどのデザインを提供し、企業やブランドのイメージを強化。視覚的な魅力を最大限に引き出します。
             </p>
-            <div class="mt-4">
+            <div class="text-center">
               <a
                 href="./service-web.html"
                 class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600"
@@ -212,20 +215,19 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           <div class="p-8">
             <img
-              class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-              src="https://picsum.photos/seed/picsum/200/300"
+              class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-md"
+              src="https://picsum.photos/id/187/200/300"
               alt="blog"
             />
             <h1
-              class="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
+              class="text-center mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
             >
               メールマガジン運用
             </h1>
             <p class="mx-auto text-base leading-relaxed text-gray-500">
-              Free and Premium themes, UI Kit's, templates and landing pages
-              built with Tailwind CSS, HTML &amp; Next.js.
+              効果的なメールマガジンの制作と配信で、顧客との関係を強化。購読者に価値ある情報を届け、リピート率を向上させます。
             </p>
-            <div class="mt-4">
+            <div class="text-center">
               <a
                 href="./service-web.html"
                 class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600"
@@ -237,20 +239,19 @@
           </div>
           <div class="p-8">
             <img
-              class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
+              class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-md"
               src="https://picsum.photos/seed/picsum/200/300"
               alt="blog"
             />
             <h1
-              class="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
+              class="text-center mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
             >
-              Short headline.
+              写真撮影 / 物撮り
             </h1>
             <p class="mx-auto text-base leading-relaxed text-gray-500">
-              Free and Premium themes, UI Kit's, templates and landing pages
-              built with Tailwind CSS, HTML &amp; Next.js.
+              プロの写真撮影で、サイトに統一感のある魅力的なビジュアルを提供。商品やサービスの魅力を引き出し、ユーザーの関心を高めます。
             </p>
-            <div class="mt-4">
+            <div class="text-center">
               <a
                 href="./service-web.html"
                 class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600"
@@ -262,20 +263,19 @@
           </div>
           <div class="p-8">
             <img
-              class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-              src="https://picsum.photos/seed/picsum/200/300"
+              class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-md"
+              src="https://picsum.photos/id/195/200/300"
               alt="blog"
             />
             <h1
-              class="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
+              class="text-center mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"
             >
-              Short headline.
+              SEO/広告運用
             </h1>
             <p class="mx-auto text-base leading-relaxed text-gray-500">
-              Free and Premium themes, UI Kit's, templates and landing pages
-              built with Tailwind CSS, HTML &amp; Next.js.
+              検索エンジン対策や広告運用で、サイトの集客力を向上。効果的なキーワード戦略と広告展開で売上増加をサポートします。
             </p>
-            <div class="mt-4">
+            <div class="text-center">
               <a
                 href="./service-web.html"
                 class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600"
@@ -320,157 +320,151 @@
 
     <!-- News Section -->
     <section
-      class="py-16 bg-gray-100"
+      class="py-16 px-5 bg-gray-100"
       style="background-image: url('https://picsum.photos/id/190/2000/1000')"
     >
       <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold mb-8 text-white">ニュース</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-white p-8 rounded shadow">
-            <h3 class="text-2xl font-bold mb-4">
-              ホームページリニューアルのお知らせ
-            </h3>
-            <p>新しいデザインのウェブサイトが公開されました。</p>
-          </div>
-          <div class="bg-white p-8 rounded shadow">
-            <h3 class="text-2xl font-bold mb-4">デザイン案件キャンペーン</h3>
-            <p>期間限定でデザイン案件の特別価格キャンペーンを実施中。</p>
-          </div>
+        <div class="bg-white p-8 rounded shadow">
+          <h3 class="text-2xl font-bold mb-4">
+            ホームページリニューアルのお知らせ
+          </h3>
+          <p>新しいデザインのウェブサイトが公開されました。</p>
         </div>
       </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section class="py-16 bg-white">
+    <!--section class="py-16 bg-white">
       <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-8">実績紹介</h2>
-        <div
-          x-data="{
-              tabSelected: 1,
-              tabId: $id('tabs'),
-              tabButtonClicked(tabButton){
-                  this.tabSelected = tabButton.id.replace(this.tabId + '-', '');
-                  this.tabRepositionMarker(tabButton);
-              },
-              tabRepositionMarker(tabButton){
-                  this.$refs.tabMarker.style.width = tabButton.offsetWidth + 'px';
-                  this.$refs.tabMarker.style.height = tabButton.offsetHeight + 'px';
-                  this.$refs.tabMarker.style.left = tabButton.offsetLeft + 'px';
-              },
-              tabContentActive(tabContent){
-                  return this.tabSelected == tabContent.id.replace(this.tabId + '-content-', '');
-              },
-              tabButtonActive(tabContent){
-                  const tabId = tabContent.id.split('-').slice(-1);
-                  return this.tabSelected == tabId;
-              }
-          }"
-          x-init="tabRepositionMarker($refs.tabButtons.firstElementChild);"
-          class="relative w-full"
-        >
+          <h2 class="text-4xl font-bold mb-8">実績紹介</h2>
           <div
-            x-ref="tabButtons"
-            class="relative flex items-center justify-center w-full h-10 p-1 text-gray-500 bg-white border border-gray-100 rounded-lg select-none"
+              x-data="{
+                  tabSelected: 1,
+                  tabId: $id('tabs'),
+                  tabButtonClicked(tabButton){
+                      this.tabSelected = tabButton.id.replace(this.tabId + '-', '');
+                      this.tabRepositionMarker(tabButton);
+                  },
+                  tabRepositionMarker(tabButton){
+                      this.$refs.tabMarker.style.width = tabButton.offsetWidth + 'px';
+                      this.$refs.tabMarker.style.height = tabButton.offsetHeight + 'px';
+                      this.$refs.tabMarker.style.left = tabButton.offsetLeft + 'px';
+                  },
+                  tabContentActive(tabContent){
+                      return this.tabSelected == tabContent.id.replace(this.tabId + '-content-', '');
+                  },
+                  tabButtonActive(tabContent){
+                      const tabId = tabContent.id.split('-').slice(-1);
+                      return this.tabSelected == tabId;
+                  }
+              }"
+              x-init="tabRepositionMarker($refs.tabButtons.firstElementChild);"
+              class="relative w-full"
           >
-            <button
-              :id="$id(tabId)"
-              @click="tabButtonClicked($el);"
-              type="button"
-              :class="{ 'bg-gray-100 text-gray-700' : tabButtonActive($el) }"
-              class="relative z-20 flex-1 h-8 px-3 text-sm font-medium transition-all rounded-md cursor-pointer whitespace-nowrap"
-            >
-              ホームページ制作
-            </button>
-            <button
-              :id="$id(tabId)"
-              @click="tabButtonClicked($el);"
-              type="button"
-              :class="{ 'bg-gray-100 text-gray-700' : tabButtonActive($el) }"
-              class="relative z-20 flex-1 h-8 px-3 text-sm font-medium transition-all rounded-md cursor-pointer whitespace-nowrap"
-            >
-              ECサイト運用
-            </button>
-            <button
-              :id="$id(tabId)"
-              @click="tabButtonClicked($el);"
-              type="button"
-              :class="{ 'bg-gray-100 text-gray-700' : tabButtonActive($el) }"
-              class="relative z-20 flex-1 h-8 px-3 text-sm font-medium transition-all rounded-md cursor-pointer whitespace-nowrap"
-            >
-              グラフィック制作
-            </button>
-            <button
-              :id="$id(tabId)"
-              @click="tabButtonClicked($el);"
-              type="button"
-              :class="{ 'bg-gray-100 text-gray-700' : tabButtonActive($el) }"
-              class="relative z-20 flex-1 h-8 px-3 text-sm font-medium transition-all rounded-md cursor-pointer whitespace-nowrap"
-            >
-              メールマガジン
-            </button>
-            <button
-              :id="$id(tabId)"
-              @click="tabButtonClicked($el);"
-              type="button"
-              :class="{ 'bg-gray-100 text-gray-700' : tabButtonActive($el) }"
-              class="relative z-20 flex-1 h-8 px-3 text-sm font-medium transition-all rounded-md cursor-pointer whitespace-nowrap"
-            >
-              SEO対応 / 広告運用
-            </button>
-            <div
-              x-ref="tabMarker"
-              class="absolute left-0 z-10 h-full duration-300 ease-out"
-              x-cloak
-            >
-              <div class="w-full h-full bg-gray-100 rounded-md shadow-sm"></div>
-            </div>
+              <div
+                  x-ref="tabButtons"
+                  class="relative flex flex-wrap items-center justify-center w-full h-10 p-1 text-gray-500 bg-white border border-gray-100 rounded-lg select-none"
+              >
+                  <button
+                      :id="$id(tabId)"
+                      @click="tabButtonClicked($el);"
+                      type="button"
+                      :class="{ 'bg-gray-100 text-gray-700' : tabButtonActive($el) }"
+                      class="relative z-20 flex-1 h-8 px-3 text-sm font-medium transition-all rounded-md cursor-pointer whitespace-nowrap"
+                  >
+                      ホームページ制作
+                  </button>
+                  <button
+                      :id="$id(tabId)"
+                      @click="tabButtonClicked($el);"
+                      type="button"
+                      :class="{ 'bg-gray-100 text-gray-700' : tabButtonActive($el) }"
+                      class="relative z-20 flex-1 h-8 px-3 text-sm font-medium transition-all rounded-md cursor-pointer whitespace-nowrap"
+                  >
+                      ECサイト運用
+                  </button>
+                  <button
+                      :id="$id(tabId)"
+                      @click="tabButtonClicked($el);"
+                      type="button"
+                      :class="{ 'bg-gray-100 text-gray-700' : tabButtonActive($el) }"
+                      class="relative z-20 flex-1 h-8 px-3 text-sm font-medium transition-all rounded-md cursor-pointer whitespace-nowrap"
+                  >
+                      グラフィック制作
+                  </button>
+                  <button
+                      :id="$id(tabId)"
+                      @click="tabButtonClicked($el);"
+                      type="button"
+                      :class="{ 'bg-gray-100 text-gray-700' : tabButtonActive($el) }"
+                      class="relative z-20 flex-1 h-8 px-3 text-sm font-medium transition-all rounded-md cursor-pointer whitespace-nowrap"
+                  >
+                      メールマガジン
+                  </button>
+                  <button
+                      :id="$id(tabId)"
+                      @click="tabButtonClicked($el);"
+                      type="button"
+                      :class="{ 'bg-gray-100 text-gray-700' : tabButtonActive($el) }"
+                      class="relative z-20 flex-1 h-8 px-3 text-sm font-medium transition-all rounded-md cursor-pointer whitespace-nowrap"
+                  >
+                      SEO対応 / 広告運用
+                  </button>
+                  <div
+                      x-ref="tabMarker"
+                      class="absolute left-0 z-10 h-full duration-300 ease-out"
+                      x-cloak
+                  >
+                      <div class="w-full h-full bg-gray-100 rounded-md shadow-sm"></div>
+                  </div>
+              </div>
+              <div
+                  class="relative flex items-center justify-center w-full p-5 mt-2 text-xs text-gray-400 border rounded-md content border-gray-200/70"
+              >
+                  <div
+                      :id="$id(tabId + '-content')"
+                      x-show="tabContentActive($el)"
+                      class="relative"
+                  >
+                      This is the content shown for ホームページ制作
+                  </div>
+                  <div
+                      :id="$id(tabId + '-content')"
+                      x-show="tabContentActive($el)"
+                      class="relative"
+                      x-cloak
+                  >
+                      This is the content shown for ECサイト運用
+                  </div>
+                  <div
+                      :id="$id(tabId + '-content')"
+                      x-show="tabContentActive($el)"
+                      class="relative"
+                      x-cloak
+                  >
+                      This is the content shown for グラフィック制作
+                  </div>
+                  <div
+                      :id="$id(tabId + '-content')"
+                      x-show="tabContentActive($el)"
+                      class="relative"
+                      x-cloak
+                  >
+                      This is the content shown for メールマガジン
+                  </div>
+                  <div
+                      :id="$id(tabId + '-content')"
+                      x-show="tabContentActive($el)"
+                      class="relative"
+                      x-cloak
+                  >
+                      This is the content shown for SEO対応 / 広告運用
+                  </div>
+              </div>
           </div>
-          <div
-            class="relative flex items-center justify-center w-full p-5 mt-2 text-xs text-gray-400 border rounded-md content border-gray-200/70"
-          >
-            <div
-              :id="$id(tabId + '-content')"
-              x-show="tabContentActive($el)"
-              class="relative"
-            >
-              This is the content shown for Tab1
-            </div>
-            <div
-              :id="$id(tabId + '-content')"
-              x-show="tabContentActive($el)"
-              class="relative"
-              x-cloak
-            >
-              And, this is the content for Tab2
-            </div>
-            <div
-              :id="$id(tabId + '-content')"
-              x-show="tabContentActive($el)"
-              class="relative"
-              x-cloak
-            >
-              Finally, this is the content for Tab3
-            </div>
-            <div
-              :id="$id(tabId + '-content')"
-              x-show="tabContentActive($el)"
-              class="relative"
-              x-cloak
-            >
-              Here is the content for メールマガジン
-            </div>
-            <div
-              :id="$id(tabId + '-content')"
-              x-show="tabContentActive($el)"
-              class="relative"
-              x-cloak
-            >
-              Here is the content for グラフィック
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
+  </section-->
 
     <!-- Clients Section -->
     <section class="py-16 bg-gray-100">
@@ -503,7 +497,7 @@
 
     <!-- Contact Section -->
     <section
-      class="py-16 bg-gray-800"
+      class="py-16 bg-gray-500"
       include-html="include/contact.html"
     ></section>
 
